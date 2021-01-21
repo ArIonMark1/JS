@@ -1,3 +1,4 @@
+// сделал все задания
 // 1. С помощью цикла while вывести все простые числа в промежутке от 0 до 100.
 
 function elementaryNumbers(n) {
@@ -10,6 +11,7 @@ function elementaryNumbers(n) {
     return true
     // Если же при делении обнаруживались только ненулевые остатки, значит, число простое; в этом случае выводим его на экран
 }
+
 
 function ShowPrime(n) {
     let arrPrime = [];
@@ -26,6 +28,7 @@ function ShowPrime(n) {
 }
 let userNum = +prompt("Number: ");
 console.log(ShowPrime(userNum));
+
 
 // 2. Предположим, есть сущность корзины. Нужно реализовать функционал подсчета стоимости корзины в зависимости от находящихся в ней товаров.
 
@@ -125,6 +128,7 @@ function counter(showcase) {
         // если ползовател: -
         //пропустить товар
         else continue
+
     };
 
     // когда товар весь был предложен, закончить вывод и начать подщет стоимости
@@ -136,7 +140,8 @@ function counter(showcase) {
     for (i in basket_2) {
         console.log(`${basket_2[i]['name']}:  ${basket_2[i]['price']}`);
     }
-    return totalSum;   
+    return totalSum;
+    
 }
 console.log(counter(shop_2));
 
@@ -155,7 +160,6 @@ xxx
 xxxx
 xxxxx
 */
-
 for (let i = 1; i <= 20; i++ ) {
     console.log('*'.repeat(i), '\n');
     if (i == 10) {
